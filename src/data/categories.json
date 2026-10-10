@@ -1,0 +1,9 @@
+{
+  "majakka": { "label": "Majakka", "color": "#f4a261" },
+  "hylky": { "label": "Hylky", "color": "#8ecae6" },
+  "kulttuuri": { "label": "Kulttuuri", "color": "#e9c46a" },
+  "saari": { "label": "Saari", "color": "#90be6d" },
+  "luonto": { "label": "Luonto", "color": "#43aa8b" },
+  "suojelu": { "label": "Suojelu", "color": "#2ec4b6" },
+  "salaisuus": { "label": "Salaisuus", "color": "#c77dff" }
+}

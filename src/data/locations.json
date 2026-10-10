@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bengtskar",
+    "name": "Bengtskärin majakka",
+    "category": "majakka",
+    "emoji": "🗼",
+    "lat": 59.7225,
+    "lng": 22.5003,
+    "rarity": "legendaarinen",
+    "xp": 150,
+    "story": "Pohjoismaiden korkein majakka kohoaa karulla luodolla Hangon edustalla. Se valmistui 1906, ja jatkosodan aikana saarella käytiin kiivas taistelu. Nykyään majakka on museo ja yöpymispaikka.",
+    "quiz": {
+      "question": "Mikä tekee Bengtskärin majakasta erityisen?",
+      "options": ["Se on Pohjoismaiden korkein majakka", "Se on rakennettu kokonaan puusta", "Se kelluu ankkuroituna merellä", "Se on Suomen vanhin rakennus"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "suomenlinna",
+    "name": "Suomenlinnan merilinnoitus",
+    "category": "kulttuuri",
+    "emoji": "🏰",
+    "lat": 60.1454,
+    "lng": 24.9881,
+    "rarity": "legendaarinen",
+    "xp": 150,
+    "story": "1700-luvulla rakennettu merilinnoitus Helsingin edustalla on UNESCOn maailmanperintökohde. Saarilla asuu yhä noin 800 ihmistä, ja telakalla korjataan edelleen perinnealuksia.",
+    "quiz": {
+      "question": "Minkä listalle Suomenlinna kuuluu?",
+      "options": ["UNESCOn maailmanperintöluetteloon", "Euroopan suurimpiin satamiin", "Itämeren syvimpiin kohtiin", "Natura-lintuvesiin"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "uto",
+    "name": "Utön ulkosaari",
+    "category": "saari",
+    "emoji": "🏝️",
+    "lat": 59.7817,
+    "lng": 21.3711,
+    "rarity": "harvinainen",
+    "xp": 100,
+    "story": "Utö on Suomen eteläisin ympärivuotisesti asuttu saari. Sen majakka on Suomen vanhin, ja saarella toimii meri- ja ilmakehätutkimuksen asema, joka mittaa Itämeren tilaa.",
+    "quiz": {
+      "question": "Mitä Utön tutkimusasemalla seurataan?",
+      "options": ["Meren ja ilmakehän tilaa", "Tähtien liikkeitä", "Maanjäristyksiä", "Kalakauppaa"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "market",
+    "name": "Märketin majakka",
+    "category": "majakka",
+    "emoji": "🗼",
+    "lat": 60.3008,
+    "lng": 19.1311,
+    "rarity": "legendaarinen",
+    "xp": 150,
+    "story": "Pienellä Märketin luodolla kulkee Suomen ja Ruotsin raja. Kun majakka rakennettiin 1885 vahingossa Suomen puolelle, rajaa muutettiin myöhemmin mutkalle, jotta molemmat maat säilyttivät yhtä paljon maata.",
+    "quiz": {
+      "question": "Miksi Märketin raja kulkee oudosti mutkitellen?",
+      "options": ["Majakka rakennettiin vahingossa väärälle puolelle", "Saari jaettiin arpomalla", "Raja seuraa vanhaa kalastusreittiä", "Hylkeet merkitsivät sen"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "soderskar",
+    "name": "Söderskärin majakka",
+    "category": "majakka",
+    "emoji": "🗼",
+    "lat": 60.1101,
+    "lng": 25.4186,
+    "rarity": "harvinainen",
+    "xp": 100,
+    "story": "Porvoon edustalla seisova Söderskärin majakka on sytytetty 1862. Saariryhmä on tärkeä lintujen pesimäalue, ja majakassa voi nykyään yöpyä.",
+    "quiz": {
+      "question": "Miksi Söderskärin saaret ovat luonnolle tärkeitä?",
+      "options": ["Ne ovat merilintujen pesimäalue", "Siellä kasvaa trooppisia palmuja", "Siellä on Itämeren ainoa tulivuori", "Siellä pesii valaita"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "kronprins",
+    "name": "Kronprins Gustav Adolfin hylky",
+    "category": "hylky",
+    "emoji": "⚓",
+    "lat": 60.0997,
+    "lng": 25.0272,
+    "rarity": "harvinainen",
+    "xp": 120,
+    "story": "Ruotsalainen linjalaiva ajoi karille Helsingin edustalla vuonna 1788. Hylystä on tehty Suomen ensimmäinen vedenalainen hylkypuisto, jossa sukeltajat voivat seurata opastettua reittiä.",
+    "quiz": {
+      "question": "Mikä Kronprins Gustav Adolfin hylystä on tehty?",
+      "options": ["Vedenalainen hylkypuisto sukeltajille", "Kelluva ravintola", "Tekosaari", "Satama-allas"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "vrouwmaria",
+    "name": "Vrouw Marian hylky",
+    "category": "hylky",
+    "emoji": "⚓",
+    "lat": 59.98,
+    "lng": 21.25,
+    "rarity": "legendaarinen",
+    "xp": 160,
+    "story": "Hollantilainen kauppalaiva upposi Saaristomerellä 1771 matkalla Pietariin. Sen lastissa oli arvokkaita taideaarteita Katariina Suurelle. Itämeren kylmä ja vähäsuolainen vesi on säilyttänyt hylyn poikkeuksellisen hyvin. Tarkka sijainti on suojeltu.",
+    "quiz": {
+      "question": "Miksi puulaivat säilyvät Itämeressä niin hyvin?",
+      "options": ["Kylmä, vähäsuolainen vesi pitää laivamadot poissa", "Vesi on erittäin lämmintä", "Hylyt on maalattu kullalla", "Itämeressä ei ole lainkaan happea missään"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "seili",
+    "name": "Seilin saari",
+    "category": "kulttuuri",
+    "emoji": "⛪",
+    "lat": 60.2342,
+    "lng": 21.9661,
+    "rarity": "harvinainen",
+    "xp": 100,
+    "story": "Seilillä toimi aikoinaan spitaalisairaala ja myöhemmin mielisairaala. Nykyään Turun yliopiston saaristomeren tutkimuslaitos tutkii täällä mm. rehevöitymistä ja vedenalaista luontoa.",
+    "quiz": {
+      "question": "Mitä Seilin tutkimuslaitoksessa tutkitaan nykyään?",
+      "options": ["Saaristomeren luontoa ja rehevöitymistä", "Avaruusromua", "Aavikon hiekkaa", "Sademetsiä"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "jussaro",
+    "name": "Jussarön kaivossaari",
+    "category": "saari",
+    "emoji": "⛏️",
+    "lat": 59.8247,
+    "lng": 23.5689,
+    "rarity": "harvinainen",
+    "xp": 110,
+    "story": "Jussarön saarella louhittiin rautamalmia vielä 1960-luvulla. Nykyään autioitunut kaivoskylä kuuluu Tammisaaren saariston kansallispuistoon, ja saarella on ruostuneiden rakennusten aavemainen tunnelma.",
+    "quiz": {
+      "question": "Mitä Jussaröllä aikoinaan louhittiin?",
+      "options": ["Rautamalmia", "Kultaa", "Timantteja", "Suolaa"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "oro",
+    "name": "Örön linnakesaari",
+    "category": "luonto",
+    "emoji": "🦋",
+    "lat": 59.8122,
+    "lng": 22.3317,
+    "rarity": "harvinainen",
+    "xp": 100,
+    "story": "Örö oli sotilasaluetta yli sata vuotta, joten luonto sai olla rauhassa. Saarelta löytyy satoja harvinaisia perhos- ja kasvilajeja. Nykyään se on osa Saaristomeren kansallispuistoa.",
+    "quiz": {
+      "question": "Miksi Örön luonto on säilynyt niin monimuotoisena?",
+      "options": ["Saari oli pitkään suljettua sotilasaluetta", "Saarelle tuotiin eläintarha", "Saari on keinotekoinen", "Saarella sataa lämmintä vettä"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "kobba",
+    "name": "Kobba Klintarin luotsiasema",
+    "category": "kulttuuri",
+    "emoji": "🧭",
+    "lat": 60.0228,
+    "lng": 19.8933,
+    "rarity": "tavallinen",
+    "xp": 80,
+    "story": "Maarianhaminan edustan pikkusaarella luotsit ohjasivat aikoinaan laivoja turvallisesti satamaan. Punainen luotsitupa on yksi Ahvenanmaan tunnetuimmista maamerkeistä.",
+    "quiz": {
+      "question": "Mitä luotsi tekee?",
+      "options": ["Ohjaa laivoja turvallisesti vaikeilla vesillä", "Paistaa laivan leivät", "Kalastaa hylkeitä", "Rakentaa majakoita"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "porkkala",
+    "name": "Rönnskärin luotsi- ja majakkasaari",
+    "category": "majakka",
+    "emoji": "🗼",
+    "lat": 59.9306,
+    "lng": 24.3767,
+    "rarity": "tavallinen",
+    "xp": 80,
+    "story": "Porkkalanniemen edustalla oleva Rönnskärin majakka on Suomen toiseksi vanhin, sytytetty 1800. Saari on nykyään lintuaseman tukikohta, josta seurataan muuttolintuja.",
+    "quiz": {
+      "question": "Mitä Rönnskärissä seurataan nykyään?",
+      "options": ["Muuttolintuja", "Revontulia", "Jääkarhuja", "Kuun vaiheita"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "vellamo",
+    "name": "Merikeskus Vellamo",
+    "category": "kulttuuri",
+    "emoji": "🌊",
+    "lat": 60.4683,
+    "lng": 26.9447,
+    "rarity": "tavallinen",
+    "xp": 80,
+    "story": "Kotkan aaltomainen merikeskus esittelee merenkulun historiaa ja Itämeren elämää. Sen satamassa on museoalus, kuten jäänmurtaja Tarmo.",
+    "quiz": {
+      "question": "Mikä historiallinen alus on Vellamon satamassa?",
+      "options": ["Jäänmurtaja Tarmo", "Titanic", "Viikinkilaiva Gokstad", "Mayflower"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "svartholma",
+    "name": "Svartholman merilinnoitus",
+    "category": "kulttuuri",
+    "emoji": "🏰",
+    "lat": 60.3792,
+    "lng": 26.3264,
+    "rarity": "tavallinen",
+    "xp": 80,
+    "story": "Loviisan edustalle 1700-luvulla rakennettu tähtimäinen linnoitus oli Suomenlinnan pikkuveli. Krimin sodassa englantilaiset räjäyttivät sen, ja rauniot on sittemmin kunnostettu retkikohteeksi.",
+    "quiz": {
+      "question": "Minkä linnoituksen 'pikkuveljeksi' Svartholmaa kutsutaan?",
+      "options": ["Suomenlinnan", "Olavinlinnan", "Hämeen linnan", "Turun linnan"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "kipsi",
+    "name": "Kipsipellot Saaristomeren valuma-alueella",
+    "category": "suojelu",
+    "emoji": "🌾",
+    "lat": 60.3456,
+    "lng": 22.6864,
+    "rarity": "legendaarinen",
+    "xp": 170,
+    "story": "John Nurmisen Säätiö on ollut mukana levittämässä kipsiä peltoille Saaristomeren valuma-alueella. Kipsi sitoo maaperän fosforia, jolloin vähemmän ravinteita huuhtoutuu mereen ruokkimaan sinilevää.",
+    "quiz": {
+      "question": "Miten kipsi auttaa Itämerta?",
+      "options": ["Se vähentää fosforin huuhtoutumista pelloilta mereen", "Se tekee merivedestä makeaa", "Se lämmittää merta", "Se karkottaa kaloja"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "sinileva",
+    "name": "Sinileväkukinta Suomenlahdella",
+    "category": "suojelu",
+    "emoji": "🦠",
+    "lat": 59.85,
+    "lng": 25.9,
+    "rarity": "harvinainen",
+    "xp": 120,
+    "story": "Kesän helteillä Itämeren pintaan voi nousta laajoja sinilevälauttoja. Niiden takana on rehevöityminen: liika typpi ja fosfori ruokkivat levää. Kun levä hajoaa, pohjasta loppuu happi ja syntyy kuolleita alueita.",
+    "quiz": {
+      "question": "Mikä on Itämeren rehevöitymisen pääsyy?",
+      "options": ["Liialliset ravinteet, kuten fosfori ja typpi", "Liian kova tuuli", "Liian vähän laivoja", "Kuun vetovoima"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "pietari",
+    "name": "Puhdistettu jätevesi Suomenlahden pohjukassa",
+    "category": "suojelu",
+    "emoji": "💧",
+    "lat": 60.05,
+    "lng": 27.7,
+    "rarity": "legendaarinen",
+    "xp": 170,
+    "story": "John Nurmisen Säätiön Puhdas Itämeri -hankkeet auttoivat tehostamaan fosforinpoistoa Suomenlahden pohjukan suurten kaupunkien jätevedenpuhdistamoilla. Ravinnekuorma mereen pieneni merkittävästi, ja Suomenlahden levätilanne on parantunut.",
+    "quiz": {
+      "question": "Mitä jätevedenpuhdistamoilla tehostettiin Puhdas Itämeri -hankkeissa?",
+      "options": ["Fosforinpoistoa", "Veden lämmitystä", "Suolan lisäämistä", "Kalanviljelyä"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "norppa",
+    "name": "Harmaahylkeiden luodot",
+    "category": "luonto",
+    "emoji": "🦭",
+    "lat": 59.62,
+    "lng": 21.75,
+    "rarity": "harvinainen",
+    "xp": 110,
+    "story": "Saaristomeren ulkoluodoilla lepäilee harmaahylkeitä. Hylkeet ovat Itämeren huippupetoja, ja niiden kanta romahti 1900-luvulla ympäristömyrkkyjen vuoksi. Suojelun ansiosta kanta on elpynyt.",
+    "quiz": {
+      "question": "Miksi Itämeren hyljekanta romahti 1900-luvulla?",
+      "options": ["Ympäristömyrkkyjen ja metsästyksen takia", "Liian monen jäänmurtajan takia", "Koska kalat loppuivat kokonaan", "Ilmaston liiallisen kylmyyden takia"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "rakkoleva",
+    "name": "Rakkolevävyöhyke",
+    "category": "luonto",
+    "emoji": "🌿",
+    "lat": 59.98,
+    "lng": 23.45,
+    "rarity": "tavallinen",
+    "xp": 90,
+    "story": "Rakkolevä on Itämeren 'vedenalainen metsä': se antaa suojaa ja ruokaa kaloille, simpukoille ja äyriäisille. Rehevöityminen samentaa vettä, jolloin rakkolevä ei saa valoa ja vyöhykkeet kutistuvat.",
+    "quiz": {
+      "question": "Miksi rakkoleväaluetta kutsutaan 'vedenalaiseksi metsäksi'?",
+      "options": ["Se tarjoaa suojaa ja ruokaa monille eläimille", "Siitä tehdään lankkuja", "Se kasvaa vain maalla", "Siinä asuu oravia"],
+      "answer": 0
+    }
+  },
+  {
+    "id": "pullopostia",
+    "name": "Ajelehtiva pullopostia",
+    "category": "salaisuus",
+    "emoji": "🍾",
+    "lat": 59.55,
+    "lng": 23.9,
+    "rarity": "legendaarinen",
+    "xp": 200,
+    "story": "Aaltojen keskeltä löytyy vanha pullo, jonka sisällä on kellastunut kirje: 'Kuka tämän löytää, muistakoon: meri antaa, kun siitä pidetään huolta.' Olet löytänyt kartan salaisen aarteen!",
+    "quiz": {
+      "question": "Mikä seuraavista auttaa Itämerta eniten arjessa?",
+      "options": ["Ravinnepäästöjen vähentäminen, esim. ei pesuaineita mereen", "Roskien heittäminen veteen", "Moottoriveneen tyhjäkäynti", "Vieraslajien tuominen"],
+      "answer": 0
+    }
+  }
+]

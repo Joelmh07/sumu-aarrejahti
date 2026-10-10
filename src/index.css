@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --animate-fade-in: fade-in 0.35s ease-out both;
+  --animate-pop-in: pop-in 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  --animate-slide-down: slide-down 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-slide-up: slide-up 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-float: float 3.5s ease-in-out infinite;
+  --animate-shake: shake 0.4s ease-in-out;
+  --animate-glow: glow 1.6s ease-in-out infinite;
+  --animate-toast: toast 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+
+  @keyframes fade-in { from { opacity: 0 } to { opacity: 1 } }
+  @keyframes pop-in { from { opacity: 0; transform: translateY(24px) scale(0.94) } to { opacity: 1; transform: none } }
+  @keyframes slide-down { from { opacity: 0; transform: translateY(-20px) } to { opacity: 1; transform: none } }
+  @keyframes slide-up { from { opacity: 0; transform: translate(-50%, 20px) } to { opacity: 1; transform: translate(-50%, 0) } }
+  @keyframes float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+  @keyframes shake { 0%, 100% { transform: translateX(0) } 25% { transform: translateX(-6px) } 75% { transform: translateX(6px) } }
+  @keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(233, 196, 106, 0.6) } 50% { box-shadow: 0 0 22px 4px rgba(233, 196, 106, 0.45) } }
+  @keyframes toast { from { opacity: 0; transform: translateY(-16px) scale(0.9) } to { opacity: 1; transform: none } }
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #06121f;
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+/* Kartta: hieman vanhan merikortin sävyä OSM-tiiliin */
+.leaflet-container {
+  background: #0b2238;
+  font-family: var(--font-sans);
+}
+.leaflet-tile-pane {
+  filter: sepia(0.25) saturate(1.15) hue-rotate(-8deg) contrast(1.02);
+}
+.explore-cursor .leaflet-container { cursor: crosshair; }
+.spyglass-cursor .leaflet-container { cursor: zoom-in; }
+
+.leaflet-control-attribution {
+  background: rgba(6, 18, 31, 0.75) !important;
+  color: #cbd5e1 !important;
+  border-radius: 8px 0 0 0;
+  font-size: 10px;
+}
+.leaflet-control-attribution a { color: #e9c46a !important; }
+
+/* Sumucanvas: kartan päällä, mutta klikit menevät kartalle */
+.fog-canvas {
+  position: absolute;
+  z-index: 450;
+  pointer-events: none;
+}
+
+/* Löytömerkit */
+.pin {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  animation: pin-drop 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+}
+.pin-core {
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 30%, #1f4a70, #0a1b2e);
+  border: 2px solid var(--pin);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 16px color-mix(in srgb, var(--pin) 60%, transparent);
+  transition: transform 0.2s;
+}
+.pin:hover .pin-core { transform: scale(1.15); }
+.pin-ring {
+  position: absolute;
+  inset: 4px;
+  border-radius: 9999px;
+  border: 2px solid var(--pin);
+  opacity: 0;
+}
+.pin-new .pin-ring { animation: pin-pulse 1.8s ease-out infinite; }
+.pin-legend .pin-core { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 26px rgba(233, 196, 106, 0.8); }
+.pin-badge {
+  position: absolute;
+  z-index: 3;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9999px;
+  font: 700 11px/18px var(--font-sans);
+  text-align: center;
+  color: #0a1b2e;
+}
+.pin-badge.new { background: #e9c46a; animation: glow 1.6s ease-in-out infinite; }
+.pin-badge.ok { background: #6ee7b7; }
+.pin-badge.done { background: #94a3b8; }
+@keyframes pin-drop { from { opacity: 0; transform: translateY(-30px) scale(0.3) } to { opacity: 1; transform: none } }
+@keyframes pin-pulse { 0% { transform: scale(0.8); opacity: 0.9 } 100% { transform: scale(1.9); opacity: 0 } }
+
+.pin-tooltip {
+  background: #0a1b2e !important;
+  color: #fef3c7 !important;
+  border: 1px solid rgba(233, 196, 106, 0.4) !important;
+  border-radius: 10px !important;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4) !important;
+}
+.pin-tooltip::before { border-top-color: #0a1b2e !important; }
+
+.zoom-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(8px);
+  color: #f8fafc;
+  font-size: 22px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 10px 20px rgba(0, 0, 0, 0.35);
+  transition: background 0.2s, transform 0.1s;
+}
+.zoom-btn:hover { background: rgba(15, 23, 42, 0.95); }
+.zoom-btn:active { transform: scale(0.94); }
+
+/* Koristetaustat */
+.waves {
+  background-image: repeating-radial-gradient(circle at 50% 120%, transparent 0 14px, rgba(255, 255, 255, 0.08) 15px 16px);
+}
+.waves-big {
+  background:
+    radial-gradient(120% 60% at 50% 100%, rgba(46, 196, 182, 0.25), transparent 70%),
+    repeating-linear-gradient(0deg, transparent 0 22px, rgba(142, 202, 230, 0.08) 23px 24px);
+  animation: sway 8s ease-in-out infinite;
+}
+@keyframes sway { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(12px) } }
+.stars {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff8, transparent),
+    radial-gradient(1px 1px at 70% 20%, #fff6, transparent),
+    radial-gradient(1.5px 1.5px at 40% 12%, #fff9, transparent),
+    radial-gradient(1px 1px at 85% 45%, #fff5, transparent),
+    radial-gradient(1px 1px at 10% 60%, #fff4, transparent),
+    radial-gradient(1.5px 1.5px at 60% 40%, #fff7, transparent);
+}
+.paper {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.35), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(120, 80, 30, 0.12), transparent 50%);
+}
+
+.confetti {
+  position: absolute;
+  top: -20px;
+  border-radius: 2px;
+  animation-name: confetti-fall;
+  animation-timing-function: cubic-bezier(0.3, 0.6, 0.6, 1);
+  animation-fill-mode: forwards;
+}
+@keyframes confetti-fall {
+  from { transform: translate(0, 0) rotate(var(--rot)); opacity: 1 }
+  to { transform: translate(var(--drift), 105vh) rotate(calc(var(--rot) + 720deg)); opacity: 0.6 }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "first", "title": "Ensimmäinen löytö", "emoji": "✨", "description": "Paljasta ensimmäinen piilotettu kohde.", "type": "discovered", "target": 1 },
+  { "id": "explorer5", "title": "Saaristoseikkailija", "emoji": "🧭", "description": "Löydä 5 kohdetta sumun alta.", "type": "discovered", "target": 5 },
+  { "id": "lighthouse", "title": "Majakanvartija", "emoji": "🗼", "description": "Löydä kaikki majakat.", "type": "category", "category": "majakka" },
+  { "id": "wreck", "title": "Hylkysukeltaja", "emoji": "⚓", "description": "Löydä molemmat hylyt.", "type": "category", "category": "hylky" },
+  { "id": "guardian", "title": "Itämeren suojelija", "emoji": "💚", "description": "Löydä kaikki suojelukohteet ja opi rehevöitymisestä.", "type": "category", "category": "suojelu" },
+  { "id": "quiz5", "title": "Merimestari", "emoji": "🎓", "description": "Vastaa oikein 5 visakysymykseen.", "type": "correct", "target": 5 },
+  { "id": "secret", "title": "Pullopostin löytäjä", "emoji": "🍾", "description": "Löydä kartan salainen aarre.", "type": "category", "category": "salaisuus" },
+  { "id": "all", "title": "Itämeren legenda", "emoji": "👑", "description": "Löydä kaikki kohteet.", "type": "discovered", "target": "all" }
+]
